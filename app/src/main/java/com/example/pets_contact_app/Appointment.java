@@ -8,13 +8,13 @@ public class Appointment {
     Date date;
     String name;
     String reason;
-    Pet petName;
+    Pet pet;
 
-    Appointment(Date date, String name, String reason, Pet petName){
+    Appointment(Date date, String name, String reason, Pet pet){
         this.date = date;
         this.name = name;
         this.reason = reason;
-        this.petName = petName;
+        this.pet = pet;
     }
 
 

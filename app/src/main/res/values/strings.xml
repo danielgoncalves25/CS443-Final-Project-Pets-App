@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">pets_contact_app</string>
     <string name="sign_out">Sign Out</string>
+    <string name="daniel_s_vet_shop">Daniel\'s Vet Shop</string>
+    <string name="make_pet_profile">Make Pet Profile</string>
+    <string name="hello">Hello</string>
+    <string name="view_pets_profile">View All Your Pets</string>
+    <string name="make_appointment">Make Appointment</string>
+    <string name="view_appointments">Appointments History</string>
+    <string name="login">Login</string>
 </resources>
