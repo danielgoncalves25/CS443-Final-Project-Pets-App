@@ -58,9 +58,13 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void signUp(View v) {
-//        Log.i("Pass", password.getText().toString());
-//        Log.i("Email", emailAddress.getText().toString());
-        mAuth.createUserWithEmailAndPassword(emailAddress.getText().toString(), password.getText().toString())
+        String email = emailAddress.getText().toString();
+        String pass = password.getText().toString();
+        String first = firstName.getText().toString();
+        String last = lastName.getText().toString();
+
+        if (email.length() > 0 && pass.length() > 0 && first.length() > 0 & last.length() > 0)
+            mAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -76,10 +80,11 @@ public class RegisterActivity extends AppCompatActivity {
                             finish();
                         } else {
                             Toast.makeText(RegisterActivity.this, task.getException().getMessage(),
-                                    Toast.LENGTH_LONG).show();
+                                    Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+        else Toast.makeText(this, "You left a field empty. Please Initialize All Fields", Toast.LENGTH_LONG).show();
     }
 
     public void initUserDB(String UID){

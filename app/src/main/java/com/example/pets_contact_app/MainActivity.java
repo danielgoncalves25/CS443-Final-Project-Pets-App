@@ -55,7 +55,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View v) {
-        mAuth.signInWithEmailAndPassword(emailAddress.getText().toString(), password.getText().toString())
+        String email = emailAddress.getText().toString();
+        String pass = password.getText().toString();
+
+        if (email.length() > 0 && pass.length() > 0)
+            mAuth.signInWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -72,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+        else Toast.makeText(this, "You left a field empty. Please Initialize All Fields", Toast.LENGTH_SHORT).show();
+
     }
 
     private void HomeTransition(FirebaseUser user) {

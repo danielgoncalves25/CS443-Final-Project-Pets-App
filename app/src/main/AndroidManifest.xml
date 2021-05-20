@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pets_contact_app">
-        <activity android:name=".ViewPetsActivity"></activity>
+        <activity android:name=".CreateAppointmentActivity"></activity>
+        <activity android:name=".AppointmentHistoryActivity" />
+        <activity android:name=".ViewPetsActivity" />
         <activity android:name=".CreatePetActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />

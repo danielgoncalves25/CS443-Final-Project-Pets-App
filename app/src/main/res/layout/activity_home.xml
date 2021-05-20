@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <Button
-        android:id="@+id/viewAppt"
+        android:id="@+id/viewAppts"
         android:layout_width="240dp"
         android:layout_height="56dp"
         android:layout_marginBottom="196dp"
@@ -22,7 +22,7 @@
         android:layout_height="56dp"
         android:layout_marginBottom="32dp"
         android:text="@string/make_appointment"
-        app:layout_constraintBottom_toTopOf="@+id/viewAppt"
+        app:layout_constraintBottom_toTopOf="@+id/viewAppts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

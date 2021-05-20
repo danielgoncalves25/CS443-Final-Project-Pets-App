@@ -93,6 +93,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="152dp"
         android:clickable="true"
+        android:cursorVisible="true"
         android:text="Login Here"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"

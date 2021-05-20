@@ -8,4 +8,5 @@
     <string name="make_appointment">Make Appointment</string>
     <string name="view_appointments">Appointments History</string>
     <string name="login">Login</string>
+    <string name="appointment_history">Appointment History</string>
 </resources>

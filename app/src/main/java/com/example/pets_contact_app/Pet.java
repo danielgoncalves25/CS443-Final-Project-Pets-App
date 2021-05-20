@@ -12,9 +12,9 @@ public class Pet {
     String breed;
     String sex;
     double weight;
-    int age;
+    String age;
 
-    Pet(String name, String breed, String sex, double weight, int age){
+    Pet(String name, String breed, String sex, double weight, String age){
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -40,7 +40,7 @@ public class Pet {
                 map.get("breed").toString(),
                 map.get("sex").toString(),
                 Double.valueOf(map.get("weight").toString()),
-                (Integer) map.get("age")
+                map.get("age").toString()
         );
     }
 }

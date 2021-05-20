@@ -64,8 +64,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginBottom="256dp"
         android:clickable="true"
-        android:textColor="@color/blue"
+        android:cursorVisible="true"
         android:text="Click Here"
+        android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView1" />
 
