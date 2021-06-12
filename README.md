@@ -7,6 +7,8 @@ First you must clone my repo
 
 Open Android Studio and click on "Import Project"
 
-Once the project is done loading, click on the green play button on the top right of Android Studio
+# Create Firebase Project
+Once the project is imported into Android Studio, you must now add Firebase to the project.
+Follow the instructions at https://firebase.google.com/docs/android/setup#:~:text=about%20Firebase%20projects.-,Create%20a%20Firebase%20project,can%20edit%20the%20Project%20ID.
+Once Firebase is added to the project, you can run the app.
 
-You will need to register to proceed to home page
